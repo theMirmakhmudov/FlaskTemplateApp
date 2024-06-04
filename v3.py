@@ -12,7 +12,7 @@ def say_bye():
 
 
 app.add_url_rule('/', 'hello', say_hello)
-app.add_url_rule('/hello','')
+app.add_url_rule('/bye', 'say_bye', say_bye)
 
 if __name__ == "__main__":
     app.debug = True
