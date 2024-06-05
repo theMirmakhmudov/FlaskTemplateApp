@@ -1,17 +1,17 @@
 # another port run
 
-from flask import Flask
-
-app = Flask(__name__)
-
-
-@app.route('/')
-def hello():
-    return 'Hello, World! this application runing on 8000 port'
-
-
-if __name__ == '__main__':
-    app.run(port=8000)
+# from flask import Flask
+#
+# app = Flask(__name__)
+#
+#
+# @app.route('/')
+# def hello():
+#     return 'Hello, World! this application runing on 8000 port'
+#
+#
+# if __name__ == '__main__':
+#     app.run(port=8000)
 # -------------------------------------------------------------------------------------------------- #
 # host running flask
 
