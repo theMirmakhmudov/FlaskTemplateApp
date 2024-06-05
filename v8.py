@@ -15,7 +15,8 @@ def success():
 
 @app.route("/login", methods=["POST", "GET"])
 def login():
-    if request.method == "POST" and request.form["username"] == "admin" and request.form["username"] == "mirmakhmudov16":
+    if request.method == "POST" and request.form["username"] == "admin" and request.form[
+        "username"] == "mirmakhmudov16":
         return redirect(url_for("success"))
 
     return redirect(url_for('index'))
@@ -23,3 +24,5 @@ def login():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+# login admin successfully
