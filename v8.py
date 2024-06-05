@@ -10,12 +10,12 @@ def index():
 
 @app.route('/success')
 def success():
-    return "logged in successfully"
+    return "Muvaffaqiyatli ro'yhatdan o'tdingiz xurmatli admin!"
 
 
 @app.route("/login", methods=["POST", "GET"])
 def login():
-    if request.method == "POST" and request.form["username"] == "admin":
+    if request.method == "POST" and request.form["username"] == "admin" and request.form["username"] == "mirmakhmudov16":
         return redirect(url_for("success"))
 
     return redirect(url_for('index'))
